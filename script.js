@@ -1,4 +1,3 @@
-//var minutesLabel = document.getElementById("minutes");
 var secondsLabel = document.getElementById("seconds");
 var totalSeconds = 0;
 setInterval(setTime, 1000);
@@ -6,7 +5,6 @@ setInterval(setTime, 1000);
 function setTime() {
   ++totalSeconds;
   secondsLabel.innerHTML = pad(totalSeconds % 60);
-  //minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
 }
 
 function pad(val) {
@@ -43,6 +41,5 @@ var counter=0;
             block.style.animation = "none";
             block.style.display = "none";
             alert("Game Over. Score: " +totalSeconds);
-
         }
     },10);

@@ -1,16 +1,20 @@
 *{
     padding: 0;
     margin: 0;
+    background-color: rgb(32, 33, 36);
 }
 #game{
     width: 500px;
-    height: 200px;
-    border: 1px solid black;
+    height: 220px;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 #character{
     width: 20px;
     height: 50px;
-    background-color: red;
+    background-color: rgb(172, 172, 172);
     position: relative;
     top: 150px;
 }
@@ -26,7 +30,7 @@
 #block{
     width: 20px;
     height: 20px;
-    background-color: blue;
+    background-color: rgb(172, 172, 172);
     position: relative;
     top: 130px;
     left: 480px;
@@ -35,4 +39,10 @@
 @keyframes block{
     0%{left:480px;}
     100%{left:-40px;}
+}
+#seconds{
+    position: relative;
+    top: 0px;
+    left: 460px;
+    color: rgb(172, 172, 172);
 }
