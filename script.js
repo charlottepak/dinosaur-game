@@ -40,6 +40,7 @@ var counter=0;
         if(blockLeft<20 && blockLeft>-20 && characterTop>=130){
             block.style.animation = "none";
             block.style.display = "none";
-            alert("Game Over. Score: " +totalSeconds);
+            document.querySelector("#displayScore").innerText = `SCORE: ` +totalSeconds
+            document.querySelector("#gameOver").innerText = `GAME OVER`
         }
     },10);
