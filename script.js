@@ -4,7 +4,7 @@ setInterval(setTime, 1000);
 
 function setTime() {
   ++totalSeconds;
-  secondsLabel.innerHTML = pad(totalSeconds % 60);
+  secondsLabel.innerHTML = pad(totalSeconds);
 }
 
 function pad(val) {

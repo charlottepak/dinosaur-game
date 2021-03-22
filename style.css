@@ -52,3 +52,11 @@
     left: 50%;
     top: 150px;
 }
+#button {
+    color: rgb(172, 172, 172);
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    left: 50%;
+    top: 300px;
+
+}
